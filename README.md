@@ -1,4 +1,11 @@
+
 # Physics based character control (Imitation Learning) 
+
+<img src="figure/muscle_backflip.gif" width="360"/>
+<img src="figure/muscle_piroutte.gif" width="360"/>
+<img src="figure/muscle_running.gif" width="360"/>
+<img src="figure/muscle_walking.gif", width="360"/>
+
 
 This code is a base code for physics-based character control. It consists of Ray RLlib and DART sim, and supports imitation learning with or without muscles. The algorithm is based on the papers "Scalable Muscle-actuated Human Simulation and Control (SIGGRAPH 2019)" and "A Scalable Approach to Control Diverse Behaviors for Physically Simulated Characters (SIGGRAPH 2020)." 
 
