@@ -63,6 +63,15 @@ You can check {training_configure} in ray_config.py.
 cd {downloaded folder}/build
 ./viewer/viewer {network path or environment xml name}
 ```
+To execute example motions, use networks in directory '{dowloaded folder}/data/trained_nn/'
+
+
+```bash
+# Walking
+cd {downloaded folder}/build
+./viewer/viewer ../data/trained_nn/muscle_walking
+```
+
 
 ## Contact 
 
