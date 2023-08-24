@@ -631,7 +631,7 @@ void GLFWApp::drawUIDisplay()
     // Rendering Option
     if (ImGui::CollapsingHeader("Rendering Option"))
     {
-        ImGui::SliderFloat("Muscle Resolution\t", &mMuscleResolution, 0.0, 1000.0);
+        
         ImGui::Checkbox("Draw Reference Motion\t", &mDrawReferenceSkeleton);
         ImGui::Checkbox("Draw PD Target Motion\t", &mDrawPDTarget);
         ImGui::Checkbox("Draw Joint Sphere\t", &mDrawJointSphere);
@@ -641,6 +641,7 @@ void GLFWApp::drawUIDisplay()
     }
     if (ImGui::CollapsingHeader("Muscle Rendering Option"))
     {
+        ImGui::SliderFloat("Muscle Resolution\t", &mMuscleResolution, 0.0, 1000.0);
         ImGui::RadioButton("PassiveForce", &mMuscleRenderTypeInt, 0);
         ImGui::RadioButton("ContractileForce", &mMuscleRenderTypeInt, 1);
         ImGui::RadioButton("ActivatonLevel", &mMuscleRenderTypeInt, 2);
@@ -649,6 +650,12 @@ void GLFWApp::drawUIDisplay()
 
         mMuscleRenderType = MuscleRenderingType(mMuscleRenderTypeInt);
     }
+    // if (ImGui::CollapsingHeader("Rendered Muscle"))
+    // {
+    //     // for (auto m : mSelectedMuscles)
+    //     //     ImGui::Text("%s\n", m->name.c_str());
+    // }
+
     if (mEnv->getUseMuscle())
         mEnv->getCharacter(0)->getMuscleTuple(false);
     // Related Dof Muscle Rendering
