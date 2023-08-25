@@ -79,6 +79,10 @@ cd {downloaded folder}/build
 ./viewer/viewer ../data/trained_nn/muscle_walking
 ```
 
+## Reference Code
+
+[1] https://github.com/lsw9021/MASS.git
+[2] https://github.com/facebookresearch/ScaDiver.git
 
 ## Contact 
 
